@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>title</title>
+    <script type="text/javascript">
+        function changeImg(){
+            var img = document.getElementById("gifload")
+            img.src = "images/miyeon_heart.png"
+        }
+
+        function stopGif(){
+            setInterval(changeImg, 4000)
+        }
+
+    </script>
+</head>
+<body onload="stopGif()">
+    <div class="container">
+        <div>
+            <header>
+                <img src="images/idle_logo.png" class="idlelogo" id="idlelogo">
+            </header>
+        </div>
+        <div>
+            <img src="images/Miyeon_heart_animated.gif" class="gifload" id="gifload">
+        </div>
+        <div>
+            <nav class="navbar">
+                <a href="https://www.instagram.com/official_g_i_dle/">(G)I-DLE Instagram</a> 
+                <a href="https://www.instagram.com/noodle.zip/">Miyeon Instagram</a> 
+                <a href="https://twitter.com/G_I_DLE">(G)I-DLE Twitter</a> 
+                <a href="https://www.youtube.com/watch?v=7HDeem-JaSY">STREAM QUEENCARD</a>
+            </nav>
+        </div>
+        <div>
+            <footer>This site is a fansite and is not affiliated with Cho Miyeon, (G)I-DLE, or Cube Entertainment</footer>
+        </div>
+    </div>
+</body>
+</html>

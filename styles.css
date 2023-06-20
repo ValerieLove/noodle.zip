@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+}
+.container{
+    display: flexbox;
+    flex-wrap: nowrap;
+}
+.idlelogo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 172px;
+    height: 100px;
+    opacity: 0;
+    align-self: center;
+    animation-name: fadeInAnimation;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.gifload{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.navbar{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    opacity: 0;
+    align-self: center;
+    position: relative;
+    animation-name: fadeInAnimation;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.navbar > a{
+    display: block;
+    padding: 20px;
+    font-size: 2vw;
+    background-color: #e11900;
+    color: white;
+}
+.navbar > a:link{
+    text-decoration: none;
+}
+.navbar > a:hover{
+    text-decoration: none;
+    background-color: #7e00bf;
+}
+
+.navbar > a:visited{
+    text-decoration: none;
+}
+footer{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    opacity: 0;
+    animation-name: fadeInAnimation;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
